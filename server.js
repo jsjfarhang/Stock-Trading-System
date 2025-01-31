@@ -6,10 +6,6 @@ const client = new MongoClient(process.env.MONGO_URI);
 
 app.use(express.json());
 
-app.get('/', (req, res) => {
-  res.send('Hello World');
-});
-
 app.listen(PORT, () => {
   console.log(`Server is running on http://localhost:${PORT}`);
 });
@@ -24,10 +20,12 @@ async function connectDB() {
 }
 connectDB();
 
-/*
-
-app.post('/login', async (req, res) => {
-  
+app.get('/', (req, res) => {
+  res.location.href = '/login';
 });
 
+/*
+app.get('/login', (req, res) => {
+
+});
 */
