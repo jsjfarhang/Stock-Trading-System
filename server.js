@@ -21,7 +21,7 @@ async function connectDB() {
 connectDB();
 
 app.get('/', (req, res) => {
-  res.location.href = '/login';
+  res.redirect('/login');
 });
 
 /*
