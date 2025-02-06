@@ -1,3 +1,4 @@
+require('dotenv').config();
 const express = require('express');
 const app = express();
 const PORT = process.env.PORT;
@@ -5,7 +6,6 @@ const { MongoClient } = require('mongodb');
 const client = new MongoClient(process.env.MONGO_URI);
 
 app.use(express.json());
-app.set('view engine', 'ejs');
 app.use(express.static('public'));
 
 async function connectDB() {
@@ -18,10 +18,10 @@ async function connectDB() {
 }
 connectDB();
 
-app.listen(PORT, '0.0.0.0', () => {
-  console.log(`Server is running on http://0.0.0.0:${PORT}`);
+app.get('/', (req, res) => {
+  res.render(__dirname + '/views/login.ejs');
 });
 
-app.get('/', (req, res) => {
-  res.render('login');
+app.listen(PORT, () => {
+  console.log(`Server is running on http://localhost:${PORT}`);
 });
