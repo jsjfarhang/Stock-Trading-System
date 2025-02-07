@@ -18,10 +18,17 @@ async function connectDB() {
 }
 connectDB();
 
+app.listen(PORT, () => {
+  console.log(`Server is running on http://localhost:${PORT}`);
+});
+
+
+/* webpages */
+
 app.get('/', (req, res) => {
   res.render(__dirname + '/views/login.ejs');
 });
 
-app.listen(PORT, () => {
-  console.log(`Server is running on http://localhost:${PORT}`);
+app.get('/signup', (req, res) => {
+  res.render(__dirname + '/views/signup.ejs');
 });
