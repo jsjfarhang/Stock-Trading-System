@@ -4,11 +4,26 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Tuxedo Trades</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/login.css">
 </head>
 <body>
-  <h1>Welcome to Tuxedo Trades</h1>
-  <button id="login">Login</button>
-  <script src="script.js"></script>
+  <%- include('../blocks/nav') %>
+  <div class="login">
+    <div class="loginImg"><img src="img/tuxedotrades.png"></div>
+    <div class="loginInput">
+		<div class="username">
+			Username<br>
+			<input></input>
+		</div>
+		<div class="password">
+			Password<br>
+			<input></input>
+		</div>
+	</div>
+	<div class="loginButton"><button id="login">Login</button></div>
+  	<div class="createAccountButton"><button id="createAccount">Create Account</button></div>
+  </div>
+  <%- include('../blocks/footer') %>
 </body>
 </html>
