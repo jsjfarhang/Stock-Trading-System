@@ -1,66 +1,91 @@
-/* GLOBAL */
+/* LOGIN PAGE */
 
-* {
-  margin: 0;
-  padding: 0;
+.login {
+    margin-top: 10em;
+    margin-right: 30em;
+  }
+
+.loginImg {
+    display: flex;
+    justify-content: center;
 }
 
-body {
-  font-family: system-ui;
-  background-color: #393939;
+.loginImg img {
+    width: 40em;
 }
 
-input {
-  border: black;
-  border-radius: 3px;
-  padding: 0px 5px;
-  outline: none;
+/*
+@media only screen and (max-width: 960px) {
+    .loginImg img {
+
+    }
+}
+*/
+
+.loginInput {
+    display: flex;
+    justify-content: center;
+    margin-top: 1em;
+    margin-bottom: 1em;
 }
 
-button {
-  border: transparent;
-  border-radius: 3px;
+.username {
+    margin-right: 2em;
+    font-size: large;
+    font-weight: 500;
 }
 
-/* NAV */
-
-.header {
-  background-color: #506b90;
-  position: sticky;
-  display: flex;
-  justify-content: center;
-  padding-top: 3px;
+.password {
+    margin-left: 2em;
+    font-size: large;
+    font-weight: 500;
 }
 
-.header img {
-  width: 3em;
+.username input, .password input {
+    width: 20em;
+    height: 3em;
+    border: 2px solid black;
 }
 
-.header button {
-  background-color: transparent;
-  padding-top: 5px;
+.loginButton {
+    display: flex;
+    justify-content: center;
+    margin-top: 3em;
 }
 
-.navToggleImg {
-  position: absolute;
-  left: 0;
-  margin-left: 15px;
+.createAccountButton {
+    display: flex;
+    justify-content: center;
+    margin: 1em;
 }
 
-.userImg {
-  position: absolute;
-  right: 0;
-  margin-right: 15px;
+.loginButton button {
+    background-color: #73c235;
+    border: 2px solid black;
+    padding: 10px;
+    font-weight: 800;
+    font-size: large;
+    width: 12em;
+    height: 3em;
 }
 
-/* FOOTER */
-
-.footer {
-  background-color: #cedde2;
-  display: flex;
-  justify-content: center;
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  padding: 10px;
+.createAccountButton button {
+    background-color: black;
+    color: white;
+    border: 2px solid black;
+    padding: 10px;
+    font-weight: 800;
+    font-size: large;
+    width: 12em;
+    height: 3em;
 }
+
+
+/* CREATE ACCOUNT PAGE */
+
+/* there may be css classes that can be reused from the login page */
+
+
+/* HELP PAGE */
+
+/* there may be css classes that can be reused from the login page */

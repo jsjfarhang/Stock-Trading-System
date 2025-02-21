@@ -1,0 +1,66 @@
+/* GLOBAL */
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: system-ui;
+  background-color: #393939;
+}
+
+input {
+  border: black;
+  border-radius: 3px;
+  padding: 0px 5px;
+  outline: none;
+}
+
+button {
+  border: transparent;
+  border-radius: 3px;
+}
+
+/* NAV */
+
+.header {
+  background-color: #506b90;
+  position: sticky;
+  display: flex;
+  justify-content: center;
+  padding-top: 3px;
+}
+
+.header img {
+  width: 3em;
+}
+
+.header button {
+  background-color: transparent;
+  padding-top: 5px;
+}
+
+.navToggleImg {
+  position: absolute;
+  left: 0;
+  margin-left: 15px;
+}
+
+.userImg {
+  position: absolute;
+  right: 0;
+  margin-right: 15px;
+}
+
+/* FOOTER */
+
+.footer {
+  background-color: #cedde2;
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding: 10px;
+}

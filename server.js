@@ -32,3 +32,7 @@ app.get('/', (req, res) => {
 app.get('/signup', (req, res) => {
   res.render(__dirname + '/views/signup.ejs');
 });
+
+app.get('/help', (req, res) => {
+  res.render(__dirname + '/views/help.ejs');
+});
